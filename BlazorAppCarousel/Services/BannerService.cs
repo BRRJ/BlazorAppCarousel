@@ -20,7 +20,7 @@ public class BannerService : IBannerService
 
         using (var httpClient = _httpClientFactory.CreateClient())
         {
-            var jsonString = await httpClient.GetStringAsync("https://raw.githubusercontent.com/brrj/BlazorAppCarousel/master/banners.json");
+            var jsonString = await httpClient.GetStringAsync("https://raw.githubusercontent.com/BRRJ/BlazorAppCarousel/master/banners.json");
 
             if (!string.IsNullOrEmpty(jsonString))
             {
